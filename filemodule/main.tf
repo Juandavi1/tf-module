@@ -3,5 +3,5 @@ variable "name" {
 }
 
 resource "local_file" "fileee" {
-  filename = var.name
+  filename = "${path.root}/${var.name}"
 }
